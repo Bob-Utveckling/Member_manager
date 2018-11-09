@@ -11,7 +11,7 @@ public class Member {
         this.birthYear = givenBirthYear;
     }
 
-    //constructo 2
+    //constructor 2
     public Member (String givenName, int givenBirthYear,String givenEmail) {
         this(givenName, givenBirthYear);
         this.email = givenEmail;
