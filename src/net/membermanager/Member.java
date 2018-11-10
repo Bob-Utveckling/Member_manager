@@ -3,7 +3,6 @@ package net.membermanager;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.IllegalFormatException;
 
 public class Member {
     private String name;
@@ -11,7 +10,7 @@ public class Member {
     private int birthYear;
 
     public static void main(String[] args) {
-        Member member1 = new Member("Johnattan", 1982, "johna.sanna@hotmail.com") ;
+        //Member member1 = new Member("Johnattan", 1982, "johna.sanna@hotmail.com") ;
     }
 
     //constructor 1
@@ -55,6 +54,10 @@ public class Member {
         return ("Name: <" + this.name + "> BirthYear: <" + this.email + "> Email: <" + this.birthYear + ">");
     }
 
+    //@Override
+    //void add (Member addThisMember) {
+    //    System.out.println("add disabled");
+    //}
 
 }
 
