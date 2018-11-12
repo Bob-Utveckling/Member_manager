@@ -23,10 +23,10 @@ public class Club {
 
     public int numberOfMembers() {
         if (members.isEmpty()) {
-            System.out.println("No members in club.");
+            //System.out.println("No members in club.");
             return 0;
         } else {
-            System.out.println("Number of members: " + members.size());
+            //System.out.println("Number of members: " + members.size());
             return members.size();
         }
     }
@@ -35,6 +35,22 @@ public class Club {
         //System.out.println("Club name: " + this.name);
         return ("Club name: " + this.name);
     }
+
+
+    public List<Member> members() {
+        List<Member> newList = new ArrayList<>();
+        newList = members;
+        //newList = members;
+        for (Member newItem : newList) {
+            System.out.println("name: <" + newItem.getName() + "> " +
+                    "birth year: <" + newItem.getBirthYear() + "> " +
+                    "email: <" + newItem.getEmail() + ">");
+        }
+        return newList;
+        // void and not returning means
+        // not being able to change members list from this class
+    }
+
 
     /*public void members() {
         for (Member member : members) {
@@ -45,15 +61,15 @@ public class Club {
         //return members;
         // void and not returning means
         // not being able to change members list from this class
-    }
-    */
+    }*/
+
 
     //pakcage-private:
     //i.e.:
     //The protected modifier specifies that the member
     // can only be accessed within its own package (as with package-private)
     // and, in addition, by a subclass of its class in another package.
-    List<Member> members() {
+    /*List<Member> members() {
         for (Member member : members) {
             System.out.println("name: <" + member.getName() + "> " +
                     "birth year: <" + member.getBirthYear() + "> " +
@@ -61,7 +77,8 @@ public class Club {
         }
 
         return members;
-    }
+    }*/
+
 
     @Override
     public String toString() {
